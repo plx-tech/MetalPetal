@@ -34,7 +34,11 @@ __attribute__((objc_subclassing_restricted))
 
 @property (nonatomic, readonly) MTIDrawableRenderingResizingMode resizingMode;
 
+@property (nonatomic, readonly) BOOL drawImmediately;
+
+- (instancetype)initWithDrawableProvider:(id<MTIDrawableProvider>)drawableProvider resizingMode:(MTIDrawableRenderingResizingMode)resizingMode drawImmediately:(BOOL)drawImmediately;
 - (instancetype)initWithDrawableProvider:(id<MTIDrawableProvider>)drawableProvider resizingMode:(MTIDrawableRenderingResizingMode)resizingMode;
+
 
 - (instancetype)init NS_UNAVAILABLE;
 
